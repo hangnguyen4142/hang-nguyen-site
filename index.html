@@ -3,242 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hang Nguyen | Cybersecurity – Cloud & Application Security Consulting Manager</title>
+  <title>Hang Nguyen | Cybersecurity – Cloud &amp; Application Security Consulting Manager</title>
   <style>
     :root {
-      --navy:   #0d1b2a;
-      --teal:   #1a8c8c;
+      --navy:       #0d1b2a;
+      --teal:       #1a8c8c;
       --teal-light: #23b5b5;
-      --accent: #e8f4f4;
-      --white:  #ffffff;
-      --text:   #1e2d3d;
-      --muted:  #5a7080;
-      --border: #d0e4e4;
+      --accent:     #e8f4f4;
+      --white:      #ffffff;
+      --text:       #1e2d3d;
+      --muted:      #5a7080;
+      --border:     #d0e4e4;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: var(--text);
       line-height: 1.6;
       background-color: #e4eff4;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='120' viewBox='0 0 160 120'%3E%3C!-- Cloud with lock --%3E%3Cg opacity='0.13' fill='%231a8c8c'%3E%3C!-- Cloud shape --%3E%3Cellipse cx='62' cy='52' rx='28' ry='18'/%3E%3Cellipse cx='42' cy='58' rx='18' ry='14'/%3E%3Cellipse cx='82' cy='58' rx='18' ry='14'/%3E%3Crect x='24' y='58' width='76' height='16' rx='4'/%3E%3C!-- Lock body --%3E%3Crect x='52' y='55' width='20' height='16' rx='3'/%3E%3C!-- Lock shackle --%3E%3Cpath d='M56 55 L56 50 C56 44 68 44 68 50 L68 55' fill='none' stroke='%231a8c8c' stroke-width='3.5' stroke-linecap='round'/%3E%3C!-- Keyhole --%3E%3Ccircle cx='62' cy='61' r='2.5' fill='%23e4eff4'/%3E%3Crect x='61' y='63' width='2' height='4' rx='1' fill='%23e4eff4'/%3E%3C/g%3E%3C!-- Second cloud with lock (offset) --%3E%3Cg opacity='0.07' fill='%230d5c6e' transform='translate(80 60)'%3E%3Cellipse cx='62' cy='52' rx='28' ry='18'/%3E%3Cellipse cx='42' cy='58' rx='18' ry='14'/%3E%3Cellipse cx='82' cy='58' rx='18' ry='14'/%3E%3Crect x='24' y='58' width='76' height='16' rx='4'/%3E%3Crect x='52' y='55' width='20' height='16' rx='3'/%3E%3Cpath d='M56 55 L56 50 C56 44 68 44 68 50 L68 55' fill='none' stroke='%230d5c6e' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='62' cy='61' r='2.5' fill='%23e4eff4'/%3E%3Crect x='61' y='63' width='2' height='4' rx='1' fill='%23e4eff4'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='120' viewBox='0 0 160 120'%3E%3Cg opacity='0.13' fill='%231a8c8c'%3E%3Cellipse cx='62' cy='52' rx='28' ry='18'/%3E%3Cellipse cx='42' cy='58' rx='18' ry='14'/%3E%3Cellipse cx='82' cy='58' rx='18' ry='14'/%3E%3Crect x='24' y='58' width='76' height='16' rx='4'/%3E%3Crect x='52' y='55' width='20' height='16' rx='3'/%3E%3Cpath d='M56 55 L56 50 C56 44 68 44 68 50 L68 55' fill='none' stroke='%231a8c8c' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='62' cy='61' r='2.5' fill='%23e4eff4'/%3E%3Crect x='61' y='63' width='2' height='4' rx='1' fill='%23e4eff4'/%3E%3C/g%3E%3Cg opacity='0.07' fill='%230d5c6e' transform='translate(80 60)'%3E%3Cellipse cx='62' cy='52' rx='28' ry='18'/%3E%3Cellipse cx='42' cy='58' rx='18' ry='14'/%3E%3Cellipse cx='82' cy='58' rx='18' ry='14'/%3E%3Crect x='24' y='58' width='76' height='16' rx='4'/%3E%3Crect x='52' y='55' width='20' height='16' rx='3'/%3E%3Cpath d='M56 55 L56 50 C56 44 68 44 68 50 L68 55' fill='none' stroke='%230d5c6e' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='62' cy='61' r='2.5' fill='%23e4eff4'/%3E%3Crect x='61' y='63' width='2' height='4' rx='1' fill='%23e4eff4'/%3E%3C/g%3E%3C/svg%3E");
       background-size: 240px 180px;
     }
-
-    /* ── SECURITY CANVAS BACKGROUND ── */
-    #security-bg {
-      display: none;
-    }
-
-    /* ── HEADER ── */
     header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 2.5rem 3rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+      background: var(--navy); color: var(--white);
+      padding: 2.5rem 3rem; display: flex; align-items: center; gap: 2rem;
     }
-
     header img {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--teal-light);
-      flex-shrink: 0;
+      width: 110px; height: 110px; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--teal-light); flex-shrink: 0;
     }
-
-    header .intro h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    header .intro p.title {
-      font-size: 1.05rem;
-      color: var(--teal-light);
-      margin-top: 0.3rem;
-      font-weight: 500;
-    }
-
-    header .intro p.tagline {
-      margin-top: 0.6rem;
-      font-size: 0.9rem;
-      color: #a8c8d0;
-      max-width: 620px;
-    }
-
-    /* ── LAYOUT ── */
+    header .intro h1 { font-size: 2rem; font-weight: 700; }
+    header .intro p.title { font-size: 1.05rem; color: var(--teal-light); margin-top: .3rem; font-weight: 500; }
+    header .intro p.tagline { margin-top: .6rem; font-size: .9rem; color: #a8c8d0; max-width: 620px; }
     .page {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      max-width: 1100px;
-      margin: 2rem auto;
-      gap: 1.5rem;
-      padding: 0 1.5rem 2rem;
+      display: grid; grid-template-columns: 280px 1fr;
+      max-width: 1100px; margin: 2rem auto; gap: 1.5rem; padding: 0 1.5rem 2rem;
     }
-
-    /* ── SIDEBAR ── */
-    aside {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
+    aside { display: flex; flex-direction: column; gap: 1.5rem; }
     .card {
-      background: var(--white);
-      border-radius: 10px;
-      padding: 1.4rem 1.3rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      background: var(--white); border-radius: 10px;
+      padding: 1.4rem 1.3rem; box-shadow: 0 2px 8px rgba(0,0,0,.07);
     }
-
     .card h2 {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--teal);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.5rem;
-      margin-bottom: 0.9rem;
+      font-size: .78rem; text-transform: uppercase; letter-spacing: 1.2px;
+      color: var(--teal); border-bottom: 2px solid var(--border);
+      padding-bottom: .5rem; margin-bottom: .9rem;
     }
-
-    .card p {
-      font-size: 0.88rem;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-
-    .card ul {
-      list-style: none;
-      font-size: 0.88rem;
-      color: var(--text);
-    }
-
+    .card p { font-size: .88rem; color: var(--muted); line-height: 1.65; }
+    .card ul { list-style: none; font-size: .88rem; color: var(--text); }
     .card ul li {
-      padding: 0.3rem 0;
-      border-bottom: 1px solid #eef4f4;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
+      padding: .3rem 0; border-bottom: 1px solid #eef4f4;
+      display: flex; align-items: flex-start; gap: .5rem;
     }
-
     .card ul li:last-child { border-bottom: none; }
-
-    .card ul li::before {
-      content: '▸';
-      color: var(--teal);
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
+    .card ul li::before { content: '▸'; color: var(--teal); flex-shrink: 0; margin-top: 1px; }
     .cert-badge {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--teal);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 0.3rem 0.75rem;
-      font-size: 0.78rem;
-      margin: 0.25rem 0.2rem 0 0;
-      font-weight: 500;
+      display: inline-block; background: var(--accent); color: var(--teal);
+      border: 1px solid var(--border); border-radius: 20px;
+      padding: .3rem .75rem; font-size: .78rem; margin: .25rem .2rem 0 0; font-weight: 500;
     }
-
-    .cert-badge.in-progress {
-      background: #fff8e6;
-      color: #9c7400;
-      border-color: #f0d070;
-    }
-
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.4rem;
-    }
-
+    .cert-badge.in-progress { background: #fff8e6; color: #9c7400; border-color: #f0d070; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .4rem; }
     .skill-tag {
-      background: #edf7f7;
-      color: var(--teal);
-      border-radius: 4px;
-      padding: 0.2rem 0.55rem;
-      font-size: 0.77rem;
-      font-weight: 500;
-      border: 1px solid var(--border);
+      background: #edf7f7; color: var(--teal); border-radius: 4px;
+      padding: .2rem .55rem; font-size: .77rem; font-weight: 500; border: 1px solid var(--border);
     }
-
-    /* ── MAIN ── */
+    .skill-cat { font-size: .8rem; color: var(--teal); font-weight: 600; margin: .7rem 0 .4rem; }
+    .skill-cat:first-child { margin-top: .4rem; }
     main { display: flex; flex-direction: column; gap: 1.5rem; }
-
     .section {
-      background: var(--white);
-      border-radius: 10px;
-      padding: 1.6rem 1.8rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      background: var(--white); border-radius: 10px;
+      padding: 1.6rem 1.8rem; box-shadow: 0 2px 8px rgba(0,0,0,.07);
     }
-
     .section h2 {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--teal);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.2rem;
+      font-size: .78rem; text-transform: uppercase; letter-spacing: 1.2px;
+      color: var(--teal); border-bottom: 2px solid var(--border);
+      padding-bottom: .5rem; margin-bottom: 1.2rem;
     }
-
     .job { margin-bottom: 1.8rem; }
     .job:last-child { margin-bottom: 0; }
-
     .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 0.3rem;
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: .3rem;
     }
-
-    .job-header h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .job-header .company {
-      font-size: 0.85rem;
-      color: var(--teal);
-      font-weight: 600;
-    }
-
-    .job-sub {
-      font-size: 0.87rem;
-      color: var(--muted);
-      font-style: italic;
-      margin: 0.2rem 0 0.7rem;
-    }
-
-    .job ul {
-      padding-left: 1.2rem;
-      font-size: 0.88rem;
-      color: #2e4050;
-      line-height: 1.7;
-    }
-
-    .job ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    /* ── RESPONSIVE ── */
+    .job-header h3 { font-size: 1rem; font-weight: 700; color: var(--navy); }
+    .job-header .company { font-size: .85rem; color: var(--teal); font-weight: 600; }
+    .job ul { padding-left: 1.2rem; font-size: .88rem; color: #2e4050; line-height: 1.7; }
+    .job ul li { margin-bottom: .5rem; }
+    footer { text-align: center; padding: 1.5rem; font-size: .8rem; color: var(--muted); }
     @media (max-width: 750px) {
       header { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
       .page { grid-template-columns: 1fr; }
@@ -247,141 +99,65 @@
 </head>
 <body>
 
-<canvas id="security-bg"></canvas>
-
-<!-- ══ HEADER ══ -->
 <header>
   <img src="profile.jpg" alt="Hang Nguyen" />
   <div class="intro">
     <h1>Hang Nguyen</h1>
     <p class="title">Cybersecurity – Cloud &amp; Application Security Consulting Manager</p>
-    <p class="tagline">
-      Accenture · Mountain View, CA · 15+ years delivering enterprise-scale cloud security, AI/ML, DevSecOps &amp; digital transformation
-      · Multi-cloud: GCP · AWS · Azure
-    </p>
+    <p class="tagline">Mountain View, CA · AI Security and Cloud Security Architect with 15+ years of experience delivering enterprise-scale software engineering, ...</p>
   </div>
 </header>
 
 <div class="page">
-
-  <!-- ══ SIDEBAR ══ -->
   <aside>
 
     <div class="card">
       <h2>Professional Background</h2>
-      <p>
-        AI Security and Cloud Security Architect with 15+ years of experience delivering enterprise-scale software engineering,
-        cloud security, DevSecOps, AI/ML, and digital transformation initiatives. Proven expertise designing secure cloud-native
-        and AI-enabled solutions across GCP, AWS, and Azure. Experienced in AI governance, security automation, policy-as-code,
-        IAM, data protection, threat monitoring, and secure software delivery. Led development of Generative AI and Agentic AI
-        solutions, security accelerators, and cloud security platforms while driving enterprise adoption of Zero Trust architectures.
-      </p>
+      <p>AI Security and Cloud Security Architect with 15+ years of experience delivering enterprise-scale software engineering, cloud security, DevSecOps, AI/ML, and digital transformation initiatives. Proven expertise designing secure cloud-native and AI-enabled solutions across Google Cloud, AWS, and Azure environments. Experienced in AI governance, security automation, policy-as-code, identity and access management, data protection, threat monitoring, and secure software delivery. Successfully led the development of Generative AI and Agentic AI solutions, security accelerators, and cloud security platforms while driving enterprise adoption of Zero Trust architectures and security guardrails.</p>
     </div>
 
     <div class="card">
       <h2>Education</h2>
-      <ul>
-        <li>B.S. &amp; M.S. Computer Science</li>
-      </ul>
+      <ul><li>B.S and M.S. Computer Science</li></ul>
     </div>
 
     <div class="card">
       <h2>Certifications</h2>
-      <span class="cert-badge in-progress">GenAI for Leaders (in progress)</span>
-      <span class="cert-badge in-progress">AWS Cloud Practitioner (in progress)</span>
-      <span class="cert-badge">GCP PCA</span>
-      <span class="cert-badge">GCP PCSE</span>
-      <span class="cert-badge">GCP ACE</span>
-      <span class="cert-badge">Advanced Project Management</span>
-      <span class="cert-badge">SAFe (Scaled Agile)</span>
+      <span class="cert-badge in-progress">GenAI for Leader, AWS Cloud Practitioner Certificates (in progress)</span>
+      <span class="cert-badge">Certified GCP PCA, PCSE, ACE</span>
+      <span class="cert-badge">Certified Advanced Project Management</span>
+      <span class="cert-badge">Certified Scaled Agile Framework (SAFe)</span>
     </div>
 
     <div class="card">
       <h2>Technical Skills</h2>
-      <p style="font-size:0.8rem;color:var(--teal);font-weight:600;margin-bottom:0.4rem;">AI Security &amp; Governance</p>
-      <div class="skills-grid">
-        <span class="skill-tag">Generative AI</span>
-        <span class="skill-tag">Agentic AI</span>
-        <span class="skill-tag">AI Governance</span>
-        <span class="skill-tag">AI Security Architecture</span>
-        <span class="skill-tag">AI Risk Management</span>
-        <span class="skill-tag">Secure AI Adoption</span>
-      </div>
-      <p style="font-size:0.8rem;color:var(--teal);font-weight:600;margin:0.7rem 0 0.4rem;">Cloud Security</p>
-      <div class="skills-grid">
-        <span class="skill-tag">CNAPP</span>
-        <span class="skill-tag">CSPM</span>
-        <span class="skill-tag">DSPM</span>
-        <span class="skill-tag">ZTNA</span>
-        <span class="skill-tag">IAM</span>
-        <span class="skill-tag">MFA</span>
-        <span class="skill-tag">DLP</span>
-        <span class="skill-tag">Vuln Management</span>
-        <span class="skill-tag">Security Automation</span>
-        <span class="skill-tag">DevSecOps</span>
-        <span class="skill-tag">Policy-as-Code</span>
-      </div>
-      <p style="font-size:0.8rem;color:var(--teal);font-weight:600;margin:0.7rem 0 0.4rem;">Platforms &amp; Technologies</p>
-      <div class="skills-grid">
-        <span class="skill-tag">GCP</span>
-        <span class="skill-tag">AWS</span>
-        <span class="skill-tag">Azure</span>
-        <span class="skill-tag">Vertex AI</span>
-        <span class="skill-tag">Gemini</span>
-        <span class="skill-tag">Bedrock AgentCore</span>
-        <span class="skill-tag">SageMaker</span>
-        <span class="skill-tag">OpenSearch</span>
-        <span class="skill-tag">Claude</span>
-        <span class="skill-tag">Terraform</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">Chainguard</span>
-        <span class="skill-tag">CI/CD</span>
-        <span class="skill-tag">Prisma Cloud</span>
-        <span class="skill-tag">Wiz / Rego</span>
-        <span class="skill-tag">Looker</span>
-        <span class="skill-tag">QuickSight</span>
-        <span class="skill-tag">Power BI</span>
-      </div>
-      <p style="font-size:0.8rem;color:var(--teal);font-weight:600;margin:0.7rem 0 0.4rem;">Leadership</p>
-      <div class="skills-grid">
-        <span class="skill-tag">Security Architecture</span>
-        <span class="skill-tag">TPM</span>
-        <span class="skill-tag">Customer Success</span>
-        <span class="skill-tag">Strategic Planning</span>
-        <span class="skill-tag">Stakeholder Mgmt</span>
-        <span class="skill-tag">Cross-Functional Leadership</span>
-      </div>
+      <p class="skill-cat">AI Security &amp; Governance</p><div class="skills-grid"><span class="skill-tag">Generative AI, Agentic AI, AI Governance, AI Security Architecture, AI Risk Management, Secure AI Adoption, AI Solution Architecture</span></div>      <p class="skill-cat">Cloud Security</p><div class="skills-grid"><span class="skill-tag">CNAPP, CSPM, DSPM, ZTNA, IAM, MFA, DLP, Vulnerability Management, Security Automation, DevSecOps, Policy-as-Code</span></div>      <p class="skill-cat">Platforms &amp; Technologies</p><div class="skills-grid"></div>      <p class="skill-cat">• Analytic tools</p><div class="skills-grid"><span class="skill-tag">Looker, QuickSight, PowerPI, Python</span></div>      <p class="skill-cat">Leadership</p><div class="skills-grid"><span class="skill-tag">Security Architecture, Technical Program Management, Customer Success, Strategic Planning, Stakeholder Management, Cross-Functional Leadership.</span></div>
     </div>
 
   </aside>
 
-  <!-- ══ MAIN ══ -->
   <main>
     <div class="section">
       <h2>Selected Experience</h2>
-
-      <!-- Job 1 -->
       <div class="job">
         <div class="job-header">
-          <h3>Cloud Security Consultant Lead &amp; AI Security Solutions Lead</h3>
+          <h3>Cloud Security Consultant Lead | AI Security Solutions Lead</h3>
           <span class="company">Global CMT Client Projects</span>
         </div>
         <ul>
-          <li>Built AI-powered security agents that automated Prisma Cloud RQL to Wiz Rego conversion, cloud security policy generation, graph query creation, and Terraform infrastructure provisioning across AWS, Azure, GCP, Oracle Cloud, and Alibaba Cloud.</li>
-          <li>Designed and delivered secure AI, Generative AI, and Agentic AI solutions utilizing Vertex AI, Gemini, Bedrock AgentCore, SageMaker, OpenSearch, Model Protection (Model Armor), Identity-Aware Proxy, and enterprise identity providers aligned with Zero Trust and AI governance requirements.</li>
-          <li>Built and deployed Golden Images using CI/CD pipelines, Terraform, and Dockerfile; enforced security controls/policies/IAM on Golden Images; increased compliance and adoption rate; built compliance &amp; insights dashboards.</li>
-          <li>Developed policy-as-code guardrails and automated security validation to continuously assess cloud resource compliance, configuration security, and enterprise governance.</li>
-          <li>Designed and implemented security automation pipelines using Python, Terraform, AWS Lambda, and cloud-native services to streamline onboarding/offboarding servers to CyberArk Conjur, remediation, vulnerability management, and compliance operations.</li>
-          <li>Led implementation of enterprise DLP solutions and secure cloud landing zones using Cloud Run, Cloud SQL, Pub/Sub, Terraform, and IAM across Dev, UAT, and PROD environments.</li>
+          <li>Built AI-powered security agents that automated Prisma Cloud RQL to Wiz Rego conversion, cloud security policy generation, graph query creation, and Terraform infrastructure provisioning across AWS, Azure, GCP, Oracle Cloud, and Alibaba Cloud environments.</li>
+          <li>Designed and delivered secure AI, Generative AI, and Agentic AI solutions utilizing Vertex AI, Gemini, Bedrock AgentCore, SageMaker, OpenSearch, Model Protection (Model Armor), Identity-Aware Proxy, and enterprise identity providers while aligning with organizational security, Zero Trust solutions, and AI governance requirements.</li>
+          <li>Built and deployed Golden Images utilizing CI/CD pipelines, Terraform, and Dockerfile; Enforced security controls/policies/IAM on Golden Images launching and usage; Increased compliance and adoption rate; Groomed and prioritized backlog features; Analysed data and built Golden Images compliance &amp; insights reports/dashboards</li>
+          <li>Developed policy-as-code security guardrails and automated security validation capabilities to continuously assess cloud resource compliance, configuration security, and enterprise governance requirements.</li>
+          <li>Designed and implemented security automation pipelines utilizing Python, Terraform, AWS Lambda, CI/CD platforms, and cloud-native services to streamline onboarding/offboard Windows/Linux servers to CyberArk Conjur, remediation, vulnerability management, and compliance operations.</li>
+          <li>Led implementation of enterprise Data Loss Prevention (DLP) solutions and secure cloud landing zones utilizing Cloud Run, Cloud SQL, Pub/Sub, Terraform, IAM, and security controls across development, testing, and production environments.</li>
           <li>Architected service account monitoring, security alerting, and disaster recovery capabilities to detect misconfigurations, unauthorized access, and operational security risks.</li>
-          <li>Conducted Google Workspace security assessments aligned to NIST CSF, producing security maturity evaluations, risk analyses, remediation roadmaps, and governance recommendations.</li>
-          <li>Developed technical assets, accelerators, demos, and reference architectures supporting enterprise AI security, Zero Trust, IAM lifecycle management, secure cloud modernization, and DevSecOps transformation.</li>
-          <li>Managed Enterprise Infrastructure Protection (EIP) programs securing ~20,000 Google Cloud projects through centralized policy enforcement, security remediation workflows, exemption management, and operational governance.</li>
+          <li>Conducted Google Workspace security assessments aligned to NIST Cybersecurity Framework (CSF), producing security maturity evaluations, risk analyses, remediation roadmaps, and governance recommendations.</li>
+          <li>Developed technical assets, accelerators, demos, and reference architectures supporting enterprise AI security, Zero Trust, IAM lifecycle management, secure cloud modernization, and DevSecOps transformation initiatives.</li>
+          <li>Managed Enterprise Infrastructure Protection (EIP) programs securing approximately 20,000 Google Cloud projects through centralized policy enforcement, security remediation workflows, exemption management, and operational governance.</li>
         </ul>
       </div>
 
-      <!-- Job 2 -->
       <div class="job">
         <div class="job-header">
           <h3>Data Science Lead</h3>
@@ -392,71 +168,31 @@
         </ul>
       </div>
 
-      <!-- Job 3 -->
       <div class="job">
         <div class="job-header">
           <h3>AI/ML Engineering Manager</h3>
           <span class="company">Semiconductor Industry</span>
         </div>
         <ul>
-          <li>Delivered AI/ML solutions on-premises, GCP, and AWS following Standard Security Framework; 40% of POCs converted into sales. Managed data migrations into GCP, created RFPs &amp; SOWs, and partnered with Sales to grow the pipeline.</li>
+          <li>Delivered AI/ML Solutions on-premises, Google or AWS Cloud following Standard Security Framework. 40% of POCs converted into sale. Managed data migration into GCP for many clients. Partnered with the Sales team to identify sales leads to grow the pipeline. Created RFPs, SOWs.</li>
         </ul>
       </div>
 
-      <!-- Job 4 -->
       <div class="job">
         <div class="job-header">
-          <h3>Technical Program Manager &amp; Software Engineering Manager</h3>
+          <h3>Technical Program Manager / Software Engineering Manager</h3>
           <span class="company">Aerospace Industry</span>
         </div>
         <ul>
-          <li>Led large-scale software engineering programs and cross-functional teams for 10+ years, managing full software development lifecycles, risk management, stakeholder engagement, architecture reviews, testing, deployment, and operational readiness for mission-critical aviation systems.</li>
+          <li>Led large-scale software engineering programs and cross-functional teams for more than 10 years, managing full software development lifecycles, risk management, stakeholder engagement, architecture reviews, testing, deployment, and operational readiness for mission-critical aviation systems.</li>
         </ul>
       </div>
 
-    </div><!-- /section -->
+    </div>
   </main>
+</div>
 
-</div><!-- /page -->
+<footer>&copy; 2026 Hang Nguyen &middot; Cybersecurity – Cloud &amp; Application Security Consulting Manager</footer>
 
-<footer>
-  &copy; 2026 Hang Nguyen &middot; Cybersecurity – Cloud &amp; Application Security Consulting Manager
-</footer>
-
-</body>
-<script>
-  // Security matrix / binary rain background
-  const canvas = document.getElementById('security-bg');
-  const ctx = canvas.getContext('2d');
-
-  const chars = '01アイウエオカキクケコABCDEF{}[]<>/\\|#@!?'.split('');
-  const fontSize = 13;
-  let columns, drops;
-
-  function resize() {
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
-    columns = Math.floor(canvas.width / fontSize);
-    drops   = Array(columns).fill(1);
-  }
-
-  function draw() {
-    ctx.fillStyle = 'rgba(240,246,246,0.12)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#1a8c8c';
-    ctx.font = fontSize + 'px monospace';
-
-    for (let i = 0; i < drops.length; i++) {
-      const char = chars[Math.floor(Math.random() * chars.length)];
-      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-      drops[i]++;
-    }
-  }
-
-  resize();
-  window.addEventListener('resize', resize);
-  setInterval(draw, 60);
-</script>
 </body>
 </html>
